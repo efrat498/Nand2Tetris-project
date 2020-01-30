@@ -1,11 +1,11 @@
-module tar2 #Chgit Refaeli Efrat  Shabtay 206732752
+module tar2 
 import java.lang.Integer
 import java.util.LinkedList
 import java.io.FileWriter
 import java.io.FileReader
 import java.io.BufferedReader
-
 import java.io.File
+#Translating vm files to asm files - continuance.
 
 function label = |fileName, x|{
  let labelCommand = "//label" + "\n" +
