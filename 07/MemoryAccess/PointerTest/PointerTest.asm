@@ -1,0 +1,136 @@
+//push constant
+@3030
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//pop pointer
+@SP
+A=M-1
+D=M
+@3
+M=D
+@SP
+M=M-1
+//push constant
+@3040
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//pop pointer
+@SP
+A=M-1
+D=M
+@4
+M=D
+@SP
+M=M-1
+//push constant
+@32
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//pop this
+@SP
+A=M-1
+D=M
+@3
+A=M
+A=A+1
+A=A+1
+M=D
+@SP
+M=M-1
+//push constant
+@46
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//pop that
+@SP
+A=M-1
+D=M
+@4
+A=M
+A=A+1
+A=A+1
+A=A+1
+A=A+1
+A=A+1
+A=A+1
+M=D
+@SP
+M=M-1
+//push pointer
+@THIS
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//push pointer
+@THAT
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//add
+@SP
+A=M-1
+D=M
+A=A-1
+M=D+M
+@SP
+M=M-1
+//push this
+@2
+D=A
+@3
+A=M+D
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//sub
+@SP
+A=M-1
+D=M
+A=A-1
+M=M-D
+@SP
+M=M-1
+//push that
+@6
+D=A
+@4
+A=M+D
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//add
+@SP
+A=M-1
+D=M
+A=A-1
+M=D+M
+@SP
+M=M-1
